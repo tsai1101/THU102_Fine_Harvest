@@ -1,0 +1,384 @@
+@import url(reset.css);
+
+body {
+    font-family: "Noto Sans TC", "Roboto", sans-serif;
+    line-height: 1.6;
+    letter-spacing: 1.5px;
+    background-color: #f9f9f9;
+    color: #333333;
+}
+
+.bn {
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/pc.png);
+}
+
+.bn h1 {
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: bold;
+    padding-left: 150px;
+    padding-top: 40px;
+}
+
+.bn h2 {
+    font-size: 18px;
+    color: #ffffff;
+    padding-left: 150px;
+}
+
+.bn a {
+    color: #ffffff;
+}
+
+.wrapper {
+    width: 1200px;
+    height: 1160px;
+    margin: 88px auto;
+    position: relative;
+    clear: both;
+}
+
+/* --------------- left nav --------------- */
+.avator {
+    margin-bottom: 48px;
+}
+
+.avator img {
+    display: block;
+    width: 116px;
+    height: 116px;
+    margin: 0 auto 18px;
+}
+
+.avator h6 {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.nav {
+    width: 20%;
+    float: left;
+    padding-right: 48px;
+}
+
+.nav a {
+    display: block;
+    text-decoration: none;
+    color: #333333;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 1px solid #333333;
+    padding: 8px;
+    word-wrap: break-word;
+    margin-bottom: 8px;
+}
+
+.nav a:hover {
+    color: #87bc60;
+    border-bottom: 1px solid #87bc60;
+}
+
+.nav a.active {
+    color: #335441;
+    border-bottom: 5px solid #335441;
+}
+
+/* --------------- right --------------- */
+.right {
+    float: left;
+    width: 60%;
+    margin-left: 36px;
+    padding-left: 100px;
+    border-left: 2px solid #333333;
+}
+
+.right-content {
+    width: auto;
+}
+
+.right-content-title {
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    margin-bottom: 32px;
+}
+
+/* --------------- 訂單記錄 --------------- */
+.order-progress {
+    width: 100%;
+    margin-top: 24px;
+}
+
+.progress {
+    display: flex;
+    background-image: url(../img/bgimg-line.png);
+    background-repeat: no-repeat;
+    background-position: 100px center;
+}
+
+span.active {
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #335441;
+    border-radius: 25px;
+    padding: 8px 16px;
+}
+
+span {
+    display: block;
+    font-size: 20px;
+    color: #335441;
+    border: 2px solid #335441;
+    border-radius: 25px;
+    padding: 8px 16px;
+    margin-right: 72px;
+}
+
+/* --------------- 訂單內容 --------------- */
+.order-info {
+    border-radius: 8px;
+    border: 2px solid #333333;
+    padding: 8px;
+    margin: 32px auto 0;
+}
+
+.order-info h5 {
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 2px solid #333333;
+    padding-top: 8px;
+    padding-bottom: 12px;
+}
+
+.order-info-name {
+    margin-top: 4px;
+}
+
+.order-info h6 {
+    padding-top: 4px;
+}
+
+/* --------------- 商品資料 --------------- */
+.product-info {
+    border-radius: 8px;
+    border: 2px solid #333333;
+    padding: 8px;
+    margin: 16px auto 24px;
+}
+
+.product-info-title {
+    width: 100%;
+    margin-top: 8px;
+    display: flex;
+    border-bottom: 2px solid #333333;
+    padding-top: 8px;
+    padding-bottom: 12px;
+}
+
+.product-info-title-name h4 {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.product-info-title-number {
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    width: 30%;
+    margin-left: 360px;
+}
+
+.product-info-title-number h4 {
+    margin-left: 24px;
+}
+
+.product-info-1, .product-info-2, .product-info-3 {
+    display: flex;
+    margin: 16px 0 8px;
+}
+
+.product-info-1 img, .product-info-2 img, .product-info-3 img {
+    width: 72px;
+    height: 72px;
+    margin-right: 16px;
+    border-radius: 8px;
+}
+
+.product-info-3 {
+    border-bottom: 2px solid #335441;
+    padding: 16px 0;
+}
+
+.product-info-name {
+    width: 70%;
+}
+
+.product-info-name h4 {
+    font-size: 18px;
+    margin: 4px 0;
+}
+
+.product-info-name h5 {
+    font-size: 16px;
+    margin: 4px 0;
+}
+
+.product-info-price {
+    width: 50%;
+    display: flex;
+    margin: auto;
+    margin-right: 20px;
+}
+
+.product-info-price h6 {
+    font-size: 18px;
+    margin-left: 24px;
+}
+
+/* --------------- 總計 --------------- */
+.total {
+    display: flex;
+    justify-content: end;
+    margin-right: 40px;
+}
+.total-title {
+    margin-right: 16px;
+}
+.total-title h3, .total-price h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.total-title h4, .total-price h4 {
+    font-size: 18px;
+}
+.total-price h4 {
+    text-align: end;
+}
+
+/* --------------- 按鈕 --------------- */
+.btn-buy-again a {
+    display: block;
+    width: 298px;
+    line-height: 40px;
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #335441;
+    border-radius: 8px;
+    padding: 8px 16px;
+    text-align: center;
+    margin-left: 390px;
+}
+
+/* --------------- RWD --------------- */
+@media screen and (max-width: 375px) {
+    html {
+        overflow-x: hidden;
+    }
+    body {
+        overflow-x: hidden;
+    }
+
+    .bn {
+        height: 200px;
+        text-shadow: 2px 2px 5px #333333;
+    }
+    .bn h1 {
+        padding-top: 55px;
+        padding-left: 38px;
+        font-size: 28px;
+    }
+    .bn h2 {
+        padding-left: 38px;
+        font-size: 18px;
+    }
+    .wrapper {
+        display: block;
+        width: 100vw;
+        height: 2080px;
+        margin: 48px auto;
+    }
+
+    .nav {
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .right {
+        width: 312px;
+        margin-top: 48px;
+        margin-left: 28px;
+        margin-bottom: 48px;
+        padding: 0px;
+        border-left: unset;
+    }
+    .right h2 {
+        text-align: center;
+    }
+
+    .progress {
+        display: flex;
+        background-image: none;
+    }
+
+    span{
+        font-size: 11px;
+        margin: 0 auto;
+    }
+    span.active {
+        font-size: 12px;
+    }
+
+    .order-info h5 {
+        font-size: 16px;
+        padding-top: 4px;
+        padding-bottom: 8px;
+    }
+    .order-info h6 {
+        font-size: 14px;
+    }
+
+    .product-info-title {
+        display: none;
+    }
+    .product-info-1 img, .product-info-2 img, .product-info-3 img {
+        width: 52px;
+        height: 52px;
+    }
+    .product-info-1, .product-info-2, .product-info-3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 16px 0 8px;
+    }
+    .product-info-name h4 {
+        font-size: 14px;
+    }
+    .product-info-name h5 {
+        font-size: 12px;
+    }
+    .product-info-price {
+        width: 100%;
+        display: flex;
+    }
+    .product-info-price h6 {
+        font-size: 12px;
+        margin-left: 24px;
+    }
+    
+    .btn-buy-again a {
+        width: 280px;
+        line-height: 40px;
+        font-size: 16px;
+        margin: 0;
+    }
+}

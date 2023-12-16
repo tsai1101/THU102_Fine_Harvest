@@ -1,0 +1,229 @@
+@import url(reset.css);
+
+body{
+    font-family: 'Noto Sans TC', 'Roboto', sans-serif;
+    line-height: 1.6;
+    letter-spacing: 1.5px;
+    background-color: #F9F9F9;
+    color: #333333;
+}
+
+.bn{
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/pc.png);
+}
+
+.bn h1{
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: bold;
+    padding-left: 150px;
+    padding-top: 40px;
+}
+
+.bn h2{
+    font-size: 18px;
+    color: #ffffff;
+    padding-left: 150px;
+}
+.bn a {
+    color: #ffffff;
+}
+
+.wrapper{
+    width: 1200px;
+    height: 508px;
+    margin: 88px auto;
+}
+
+/* --------------- left nav --------------- */
+.avator{
+    margin-bottom: 48px;
+}
+
+.avator img{
+    display: block;
+    width: 116px;
+    height: 116px;
+    margin: 0 auto 18px;
+}
+
+.avator h6{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.nav{
+    width: 20%;
+    float: left;
+    margin-left: 50px;
+}
+
+.nav a{
+    display: block;
+    text-decoration: none;
+    color: #333333;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 1px solid #333333;
+    padding: 8px;
+    word-wrap: break-word;
+    margin-bottom: 8px;
+}
+
+.nav a:hover{
+    color:#87BC60;
+    border-bottom: 1px solid #87BC60;
+}
+
+.nav a.active {
+    color: #335441;
+    border-bottom: 5px solid #335441;
+}
+
+/* --------------- right --------------- */
+.right{
+    float: left;
+    width: 50%;
+    margin-left: 120px;
+    border-left: 1px solid #333333;
+    padding-left: 160px;
+}
+
+.right h2{
+    font-size: 24px;
+    font-weight: 500;
+    border-bottom: 1px solid #333333;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+}
+
+.content_width{
+    width: 479px;
+}
+
+/* --------------- favorites list --------------- */
+.list_1, .list_2, .list_3, .list_4{
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.list_1 img, .list_2 img, .list_3 img, .list_4 img{
+    width: 88px;
+    height: 88px;
+    margin-right: 16px;
+    border-radius: 8px;
+}
+
+.item_name{
+    width: 100%;
+}
+
+.item_name h5{
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+.item_name h6{
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+.item_btn {
+    width: 150px;
+    text-align: end;
+}
+
+.item_btn i{
+    font-size: 24px;
+}
+
+.item_btn a{
+    font-size: 16px;
+    display: block;
+    background-color: #355441;
+    border-radius: 8px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    width: 150px;
+    line-height: 40px;
+    padding: 4px 16px;
+    margin-top: 8px;
+    box-sizing: border-box;
+}
+
+/* --------------- RWD --------------- */
+@media screen and (max-width: 375px) {
+    html {
+        overflow-x: hidden;
+    }
+    body {
+        overflow-x: hidden;
+    }
+
+    .bn {
+        height: 200px;
+        text-shadow: 2px 2px 5px #333333;
+    }
+    .bn h1 {
+        padding-top: 55px;
+        padding-left: 38px;
+        font-size: 28px;
+    }
+    .bn h2 {
+        padding-left: 38px;
+        font-size: 18px;
+    }
+    .wrapper {
+        display: block;
+        width: 100vw;
+        height: 1000px;
+        margin: 48px auto;
+    }
+
+    .nav {
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .right {
+        width: 312px;
+        margin-top: 48px;
+        margin-left: 28px;
+        margin-bottom: 48px;
+        padding: 0px;
+        border-left: unset;
+    }
+    .right h2 {
+        text-align: center;
+    }
+
+    .list_1 img, .list_2 img, .list_3 img, .list_4 img {
+        width: 52px;
+        height: 52px;
+    }
+    .item_name h5 {
+        font-size: 14px;
+        margin: 4px 0;
+    }
+    .item_name h6 {
+        font-size: 12px;
+        margin: 4px 0;
+    }
+
+    .item_btn i {
+        font-size: 16px;
+    }
+    .item_btn a {
+        font-size: 14px;
+        width: 120px;
+        line-height: 24px;
+    }
+}

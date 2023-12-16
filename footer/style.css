@@ -1,0 +1,158 @@
+@import url("../reset.css");
+
+body{
+    background-color: #f9f9f9;
+    width: 100%;
+    color: #333;
+    font-family: 'Noto Sans TC', 'Roboto';
+}
+
+/* -----------footer----------------- */
+.footer{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footerTop{
+    background-color: #FFE78F;
+    height: 322px;
+}
+
+.footerTop > ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 322px;
+    margin: 0 auto;
+}
+
+.TopLeft > ul{
+    display: flex;
+    margin-top: 48px;
+    margin-right: 104px;
+}
+
+.TopLeft > ul > li{
+    height: 32px;
+    margin: 0 10px;
+}
+
+.TopLeft > ul > li > a{
+    font-size: 32px;
+}
+
+.TopMiddle{
+    margin-right: 104px;
+}
+
+.TopMiddle p{
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 1.8px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+
+.TopMiddle > a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 1.6px;
+}
+
+.TopRight p:first-child{
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 1.8px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+
+.TopRight > p{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 1.6px;
+    margin-bottom: 16px;
+}
+
+.footerBottom{
+    background-color: #335441;
+    height: 42px;
+}
+
+.footerBottom p{
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 14px;
+    letter-spacing: 1.12px;
+}
+
+/* -----------------------------------RWD mobile----------------------------------------- */
+@media screen and (max-width: 375px){
+    /* --------------footer---------------- */
+    .footerTop{
+        height: 338px;
+        padding: 32px 0;
+    }
+
+    .footerTop > ul{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .TopLeft{
+        order: 3;
+    }
+
+    .TopLeft ul{
+        margin: 0;
+    }
+
+    .TopLeft > img{
+        display: none;
+    }
+
+    .footerTop .TopMiddle{
+        margin: 0 0 24px 0;
+    }
+
+    .footerTop .TopMiddle p{
+        font-size: 14px;
+        padding: 0;
+        margin-bottom: 4px;
+        width: 327px;
+    }
+
+    .footerTop .TopMiddle a{
+        font-size: 14px;
+        padding: 0;
+        margin-bottom: 4px;
+    }
+
+    .footerTop .TopRight{
+        margin: 0 0 24px 0;
+    }
+
+    .footerTop .TopRight p{
+        font-size: 14px;
+        padding: 0;
+        margin-bottom: 4px;
+        width: 327px;
+    }
+
+    .footerBottom p{
+        font-size: 12px;
+        width: 212px;
+        padding: 0;
+        margin: 0 auto;
+        letter-spacing: 0.24px;
+        line-height: 150%;
+    }
+}

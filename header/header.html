@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+  <header class="desktop">
+    <div class="header-container">
+      <div class="header-group">
+        <a href="../index/index.html"><img src="./img/logo.png" alt="Logo"></a>
+      </div>
+      <div class="header-group">
+        <h4 class="header-item" data-popup="#header-popup-products">
+          所有產品
+        </h4>
+        <h4 class="header-item">
+          最新消息
+        </h4>
+        <h4 class="header-item">
+          關於我們
+        </h4>
+        <h4 class="header-item" data-popup="#header-popup-info">
+          資訊報報
+        </h4>
+        <h4 class="header-item">
+          常見問題
+        </h4>
+      </div>
+      <div class="header-group">
+        <h5 class="header-item icon" data-popup="#header-popup-search">
+          <i class="bi bi-search"></i>
+        </h5>
+        <h5 class="header-item icon">
+          <i class="bi bi-person-circle"></i>
+        </h5>
+        <h5 class="header-item icon" data-popup="#header-popup-cart">
+          <i class="bi bi-cart3 with-red-dot"></i>
+        </h5>
+      </div>
+    </div>
+
+    <div id="header-popup-products" class="header-popup dropdown hide">
+      <div class="catagory">
+        <h4 class="catagory-title">蔬菜</h4>
+        <a class="catagory-item">深色葉菜類</a>
+        <a class="catagory-item">淺色葉菜類</a>
+        <a class="catagory-item">根莖類</a>
+        <a class="catagory-item">菇蕈類</a>
+        <a class="catagory-item">芽菜類</a>
+        <a class="catagory-item">辛香料類</a>
+      </div>
+      <div class="catagory">
+        <h4 class="catagory-title">水果</h4>
+        <a class="catagory-item">四季</a>
+        <a class="catagory-item">春天</a>
+        <a class="catagory-item">夏天</a>
+        <a class="catagory-item">秋天</a>
+        <a class="catagory-item">冬天</a>
+      </div>
+      <div class="catagory">
+        <h4 class="catagory-title">五穀雜糧</h4>
+        <a class="catagory-item">稻類</a>
+        <a class="catagory-item">黍類</a>
+        <a class="catagory-item">稷類</a>
+        <a class="catagory-item">麥類</a>
+        <a class="catagory-item">菽類</a>
+      </div>
+      <div class="catagory">
+        <h4 class="catagory-title">海鮮肉類</h4>
+        <a class="catagory-item">牛肉</a>
+        <a class="catagory-item">豬肉</a>
+        <a class="catagory-item">雞/羊/鴨</a>
+        <a class="catagory-item">海鮮</a>
+      </div>
+      <div class="catagory">
+        <h4 class="catagory-title">乳蛋豆</h4>
+        <a class="catagory-item">小農鮮奶</a>
+        <a class="catagory-item">非基改豆漿</a>
+        <a class="catagory-item">認證蛋</a>
+        <a class="catagory-item">機能蛋</a>
+      </div>
+      <div class="catagory">
+        <h4 class="catagory-title">優惠/組合箱</h4>
+        <a class="catagory-item">蔬菜組合箱</a>
+        <a class="catagory-item">水果禮盒</a>
+        <a class="catagory-item">特價活動</a>
+      </div>
+    </div>
+
+    <div id="header-popup-info" class="header-popup dropdown hide">
+      <h4 class="info-item">合作小農</h4>
+      <h4 class="info-item">料理食譜</h4>
+      <h4 class="info-item">營養小學堂</h4>
+    </div>
+
+    <div id="header-popup-search" class="header-popup icon-dropdown hide">
+      <div class="search-bar">
+        <input type="text" placeholder="搜尋…">
+        <i class="bi bi-search icon"></i>
+      </div>
+    </div>
+
+    <div id="header-popup-cart" class="header-popup icon-dropdown hide">
+      <div class="product-container">
+        <div class="product">
+          <div class="left">
+            <div class="img-container">
+              <img src="./img/01.jpg" alt="羽衣甘藍">
+            </div>
+            <div class="info-container">
+              <div class="farm-name">青青農場</div>
+              <div class="product-name">有機羽衣甘藍(3包入)</div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="quantity-container">
+              <div class="quantity">1件</div>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="left">
+            <div class="img-container">
+              <img src="./img/02.jpg" alt="櫛瓜">
+            </div>
+            <div class="info-container">
+              <div class="farm-name">青青農場</div>
+              <div class="product-name">履歷櫛瓜(5根入)</div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="quantity-container">
+              <div class="quantity">1件</div>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="left">
+            <div class="img-container">
+              <img src="./img/03.jpg" alt="馬鈴薯">
+            </div>
+            <div class="info-container">
+              <div class="farm-name">青菜菜園</div>
+              <div class="product-name">好吃馬鈴薯(5顆入)</div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="quantity-container">
+              <div class="quantity">2件</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="button-container">
+        <button class="btn btn-md btn-primary">直接結帳</button>
+        <button class="btn btn-md btn-outline">查看購物車</button>
+      </div>
+    </div>
+  </header>
+
+  <!---------- 手機板 ----------->
+  <header class="mobile">
+    <div class="header-container">
+      <div class="left">
+        <i class="bi bi-list" data-popup="#header-popup-menu"></i>
+      </div>
+      <div class="middle">
+        <a href="../index/index.html"><img class="logo" src="./img/logo.png" alt="Logo">
+      </div>
+      <div class="right">
+        <i class="bi bi-person-circle"></i>
+        <i class="bi bi-cart3 with-red-dot"></i>
+      </div>
+    </div>
+
+    <div id="header-popup-menu" class="header-popup icon-dropdown hide">
+      <div class="header-menu-container">
+        <div class="header-menu-head">
+          <div class="search-bar">
+            <i class="bi bi-search icon"></i>
+            <input type="text" placeholder="搜尋…">
+          </div>
+          <i class="bi bi-x-lg" data-popup="#header-popup-menu"></i>
+        </div>
+        <div class="header-menu-body">
+          <div id="header-menu-main" class="header-menu-body-container">
+            <div class="header-menu-item" data-menu="#header-menu-catagory-vegetables">
+              <h5 class="header-menu-item-name">蔬菜</h5>
+              <i class="bi bi-caret-right-fill"></i>
+            </div>
+            <div class="header-menu-item" data-menu="#header-menu-catagory-fruits">
+              <h5 class="header-menu-item-name">水果</h5>
+              <i class="bi bi-caret-right-fill"></i>
+            </div>
+            <div class="header-menu-item" data-menu="#header-menu-catagory-grain">
+              <h5 class="header-menu-item-name">五穀雜糧</h5>
+              <i class="bi bi-caret-right-fill"></i>
+            </div>
+            <div class="header-menu-item" data-menu="#header-menu-catagory-meat">
+              <h5 class="header-menu-item-name">海鮮肉類</h5>
+              <i class="bi bi-caret-right-fill"></i>
+            </div>
+            <div class="header-menu-item" data-menu="#header-menu-catagory-dairy">
+              <h5 class="header-menu-item-name">乳蛋豆</h5>
+              <i class="bi bi-caret-right-fill"></i>
+            </div>
+            <div class="header-menu-item" data-menu="#header-menu-catagory-sales">
+              <h5 class="header-menu-item-name">優惠/組合箱</h5>
+              <i class="bi bi-caret-right-fill"></i>
+            </div>
+            <div class="header-menu-item">
+              <h5 class="header-menu-item-name">最新消息</h5>
+            </div>
+            <div class="header-menu-item">
+              <h5 class="header-menu-item-name">關於我們</h5>
+            </div>
+            <div class="header-menu-item">
+              <h5 class="header-menu-item-name">資訊報報</h5>
+            </div>
+            <div class="header-menu-item">
+              <h5 class="header-menu-item-name">常見問題</h5>
+            </div>
+          </div>
+
+          <div id="header-menu-catagory-vegetables" class="header-menu-body-container hide">
+            <div class="header-menu-item" data-menu="#header-menu-main">
+              <i class="bi bi-caret-left-fill"></i>
+              <h5 class="header-menu-item-name">蔬菜</h5>
+            </div>
+            <div class="header-menu-item">
+              <h5 class="header-menu-item-name">深色葉菜類</h5>
+            </div>
+            <div class="header-menu-item">
+              <h5 class="header-menu-item-name">淺色葉菜類</h5>
+            </div>
+            <div class="header-menu-item">
+              <h5 class="header-menu-item-name">根莖類</h5>
+            </div>
+            <div class="header-menu-item">
+              <h5 class="header-menu-item-name">菇蕈類</h5>
+            </div>
+            <div class="header-menu-item">
+              <h5 class="header-menu-item-name">芽菜類</h5>
+            </div>
+            <div class="header-menu-item">
+              <h5 class="header-menu-item-name">辛香料類</h5>
+            </div>
+          </div>
+
+          <div id="header-menu-catagory-fruits" class="header-menu-body-container hide">
+            <div class="header-menu-item" data-menu="#header-menu-main">
+              <i class="bi bi-caret-left-fill"></i>
+              <h5 class="header-menu-item-name">水果</h5>
+            </div>
+            <div class="header-menu-item">
+              <h5 class="header-menu-item-name">四季</h5>
+            </div>
+            <div class="header-menu-item">
+              <h5 class="header-menu-item-name">春天</h5>
+            </div>
+            <div class="header-menu-item">
+              <h5 class="header-menu-item-name">夏天</h5>
+            </div>
+            <div class="header-menu-item">
+              <h5 class="header-menu-item-name">秋天</h5>
+            </div>
+            <div class="header-menu-item">
+              <h5 class="header-menu-item-name">冬天</h5>
+            </div>
+          </div>
+
+          <div id="header-menu-catagory-grain" class="header-menu-body-container hide">
+            <div class="header-menu-item" data-menu="#header-menu-main">
+              <i class="bi bi-caret-left-fill"></i>
+              <h5 class="header-menu-item-name">五穀雜糧</h5>
+            </div>
+            <div class="header-menu-item">
+              <h5 class="header-menu-item-name">稻類</h5>
+            </div>
+            <div class="header-menu-item">
+              <h5 class="header-menu-item-name">黍類</h5>
+            </div>
+            <div class="header-menu-item">
+              <h5 class="header-menu-item-name">稷類</h5>
+            </div>
+            <div class="header-menu-item">
+              <h5 class="header-menu-item-name">麥類</h5>
+            </div>
+            <div class="header-menu-item">
+              <h5 class="header-menu-item-name">菽類</h5>
+            </div>
+          </div>
+
+          <div id="header-menu-catagory-meat" class="header-menu-body-container hide">
+            <div class="header-menu-item" data-menu="#header-menu-main">
+              <i class="bi bi-caret-left-fill"></i>
+              <h5 class="header-menu-item-name">海鮮肉類</h5>
+            </div>
+            <div class="header-menu-item">
+              <h5 class="header-menu-item-name">牛肉</h5>
+            </div>
+            <div class="header-menu-item">
+              <h5 class="header-menu-item-name">豬肉</h5>
+            </div>
+            <div class="header-menu-item">
+              <h5 class="header-menu-item-name">雞/羊/鴨</h5>
+            </div>
+            <div class="header-menu-item">
+              <h5 class="header-menu-item-name">海鮮</h5>
+            </div>
+          </div>
+
+          <div id="header-menu-catagory-dairy" class="header-menu-body-container hide">
+            <div class="header-menu-item" data-menu="#header-menu-main">
+              <i class="bi bi-caret-left-fill"></i>
+              <h5 class="header-menu-item-name">乳蛋豆</h5>
+            </div>
+            <div class="header-menu-item">
+              <h5 class="header-menu-item-name">小農鮮奶</h5>
+            </div>
+            <div class="header-menu-item">
+              <h5 class="header-menu-item-name">非基改豆漿</h5>
+            </div>
+            <div class="header-menu-item">
+              <h5 class="header-menu-item-name">認證蛋</h5>
+            </div>
+            <div class="header-menu-item">
+              <h5 class="header-menu-item-name">機能蛋</h5>
+            </div>
+          </div>
+
+          <div id="header-menu-catagory-sales" class="header-menu-body-container hide">
+            <div class="header-menu-item" data-menu="#header-menu-main">
+              <i class="bi bi-caret-left-fill"></i>
+              <h5 class="header-menu-item-name">優惠/組合箱</h5>
+            </div>
+            <div class="header-menu-item">
+              <h5 class="header-menu-item-name">蔬菜組合箱</h5>
+            </div>
+            <div class="header-menu-item">
+              <h5 class="header-menu-item-name">水果禮盒</h5>
+            </div>
+            <div class="header-menu-item">
+              <h5 class="header-menu-item-name">特價活動</h5>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="./header.js"></script>
+</body>
+
+</html>

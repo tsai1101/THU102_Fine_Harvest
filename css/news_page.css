@@ -1,0 +1,254 @@
+@import url(reset.css);
+
+body{
+    font-family: 'Noto Sans TC', 'Roboto', sans-serif;
+    line-height: 1.6;
+    letter-spacing: 1.5px;
+    background-color: #F9F9F9;
+    color: #333333;
+}
+
+/* --------------最上方的標題＆麵包屑-------------- */
+.bn{
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/pc.png);
+}
+
+.bn h1{
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: bold;
+    padding-left: 150px;
+    padding-top: 40px;
+}
+
+.bn h2{
+    font-size: 18px;
+    color: #ffffff;
+    padding-left: 150px;
+}
+
+.bn a {
+    color: #ffffff;
+}
+
+/* --------------最外層的框-------------- */
+.wrapper{
+    width: 1200px;
+    height: 1600px;
+    margin: 88px auto;
+    /* border: 3px solid red; */
+}
+
+/* --------------上方標題-------------- */
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.title h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.title h4 {
+    font-size: 18px;
+    margin-left: 10px; /* 調整左邊距 */
+}
+
+/* --------------內文區塊-------------- */
+section img{
+    max-width:1136px ;
+    height: 520px;
+
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+section ul{
+    margin: 16px 24px 88px;
+}
+
+section ul li{
+    font-size: 18px;
+    padding: 8px 0;
+}
+
+/* --------------為您推薦區塊-------------- */
+.recommend{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.recommend h1{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding-bottom: 16px;
+}
+
+.recommend ul{
+    list-style: none;
+    overflow: hidden;
+    width: 1200px;
+    padding: 16px 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.recommend li{
+    width: 273px;
+    margin: 0 12px 16px;
+}
+
+.recommend img{
+	width: 100%;
+	margin-bottom: 4px;
+}
+
+.recommend li h1{
+    font-size: 16px;
+    font-weight: normal;
+    padding-bottom: 4px;
+    color: #909090;
+	text-align: left;
+}
+
+.recommend li h2{
+    font-size: 18px;
+	text-align: left;
+}
+
+.recommend li h3{
+    font-size: 18px;
+	text-align: left;
+	color: #FF3B30;
+}
+
+.recommend li h4{
+    font-size: 14px;
+	text-align: left;
+    margin-left: 8px;
+    margin-top: 4px;
+    text-decoration: line-through;
+	color: #909090;
+}
+
+.recommend .price{
+    display: flex;
+}
+
+.recommend li a{
+	font-size: 20px;
+	display: block;
+	background-color: #355441;
+	width: 273px;
+	height: 45px;
+    border-radius: 8px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	line-height: 45px;
+    margin-top: 16px;
+}
+
+.recommend li a:hover{
+    background-color: #87BC60;
+}
+
+/* --------------------- RWD ---------------------- */
+@media screen and (max-width: 375px) {
+    html {
+        overflow-x: hidden;
+    }
+    body {
+        overflow-x: hidden;
+    }
+
+    .bn {
+        height: 200px;
+        text-shadow: 2px 2px 5px #333333;
+    }
+    .bn h1 {
+        padding-top: 55px;
+        padding-left: 38px;
+        font-size: 28px;
+    }
+    .bn h2 {
+        padding-left: 38px;
+        font-size: 18px;
+    }
+    .wrapper {
+        display: block;
+        width: 100vw;
+        height: 1750px;
+        margin: 48px auto;
+    }
+
+    .title {
+        display: grid;
+    }
+    .title h1 {
+        font-size: 16px;
+        order: 2;
+    }
+    .title h4 {
+        font-size: 16px;
+        order: 1;
+        margin-left: 0;
+    }
+
+    section img{
+        width: 333px;
+        height: 200px;
+    }
+    section ul {
+        margin: 16px 24px 48px;
+    }
+    section ul li {
+        font-size: 16px;
+    }
+
+    .recommend h1 {
+        font-size: 18px;
+        padding-bottom: 8px;
+    }
+    .recommend ul {
+        width: 360px;
+        padding: 16px 20px;
+    }
+    .recommend li{
+        width: 156px;
+        margin: 0 12px 16px;
+    }
+    .recommend li h1{
+        font-size: 14px;
+    }
+    .recommend li h2{
+        font-size: 16px;
+    }
+    .recommend li h3{
+        font-size: 16px;
+    }
+    .recommend li h4{
+        font-size: 14px;
+    }
+    .recommend .price-mb{
+        margin-top: 26px;
+    }
+    .recommend li a{
+        font-size: 14px;
+        width: 155px;
+        height: 32px;
+        line-height: 32px;
+        margin-top: 8px;
+    }
+}

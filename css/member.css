@@ -1,0 +1,266 @@
+@import url("reset.css");
+
+body{
+    font-family: 'Noto Sans TC', 'Roboto', sans-serif;
+    line-height: 1.6;
+    letter-spacing: 1.5px;
+    background-color: #F9F9F9;
+    color: #333333;
+}
+
+.wrapper{
+    width: 1200px;
+    height: 850px;
+    margin: 88px auto;
+}
+
+.bn{
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/pc.png);
+}
+
+.bn h1{
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: bold;
+    padding-left: 150px;
+    padding-top: 40px;
+}
+
+.bn h2{
+    font-size: 18px;
+    color: #ffffff;
+    padding-left: 150px;
+}
+
+.bn a {
+    color: #ffffff;
+}
+
+/* --------------- left nav --------------- */
+.avator{
+    margin-bottom: 48px;
+}
+
+.avator img{
+    display: block;
+    width: 116px;
+    height: 116px;
+    margin: 0 auto 18px;
+}
+
+.avator h6{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.nav{
+    width: 20%;
+    float: left;
+    margin-left: 50px;
+}
+
+.nav a{
+    display: block;
+    text-decoration: none;
+    color: #333333;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 1px solid #333333;
+    padding: 8px;
+    word-wrap: break-word;
+    margin-bottom: 8px;
+}
+
+.nav a:hover{
+    color:#87BC60;
+    border-bottom: 1px solid #87BC60;
+}
+
+.nav a.active {
+    color: #335441;
+    border-bottom: 5px solid #335441;
+}
+
+/* --------------- right input --------------- */
+.right{
+    float: left;
+    width: 70%;
+    margin-left: 120px;
+    border-left: 1px solid #333333;
+    padding-left: 160px;
+}
+
+.right h2{
+    font-size: 24px;
+    font-weight: 500;
+    border-bottom: 1px solid #333333;
+    margin-bottom: 16px;
+}
+
+.content_width{
+    width: 479px;
+}
+
+/* ----------------- 標籤 ----------------- */
+label{
+    display: block;
+    margin-bottom: 4px;
+}
+
+/* ----------------- 輸入框 ----------------- */
+.right input{
+    width: 100%;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+.right input:focus{
+    border-color: #4CAF50;
+}
+
+/* ----------------- 快速登入 ----------------- */
+.fb a{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: normal;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0866FF;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 8px;
+    padding: 8px 16px;
+}
+
+.line a{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: normal;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #59B230;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 36px;
+    padding: 8px 16px;
+}
+
+/* ----------------- 切換密碼 ----------------- */
+#now_password, #set_password, #confirm_password{
+    width: 100%;
+    padding: 8px 16px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.password_input i{
+    position: absolute;
+    right: 10px;
+    top: 55%;
+    /* transform: translateY(40%); */
+    cursor: pointer;
+}
+
+.password_input{
+    position: relative;
+}
+
+/* .fa-eye-slash{
+    font-weight: 900;
+    position: relative;
+    left: -40px;
+} */
+
+/* .fa-eye{
+    font-weight: 900;
+    position: relative;
+    left: -40px;  
+} */
+
+.save a{
+    display: block;
+    width: 479px;
+    height: 46px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #355441;
+    text-align: center;
+    line-height: 46px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 24px;
+}
+
+.save a:hover{
+    background-color: #87BC60;
+}
+
+/* --------------- RWD --------------- */
+@media screen and (max-width: 375px) {
+    html {
+        overflow-x: hidden;
+    }
+    body {
+        overflow-x: hidden;
+    }
+
+    .bn {
+        height: 200px;
+        text-shadow: 2px 2px 5px #333333;
+    }
+    .bn h1 {
+        padding-top: 55px;
+        padding-left: 38px;
+        font-size: 28px;
+    }
+    .bn h2 {
+        padding-left: 38px;
+        font-size: 18px;
+    }
+    .wrapper {
+        display: block;
+        width: 100vw;
+        height: 1470px;
+        margin: 48px auto;
+    }
+
+    .nav {
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .right {
+        width: 312px;
+        margin-top: 48px;
+        margin-left: 28px;
+        padding: 0px;
+        border-left: unset;
+    }
+    .right h2 {
+        text-align: center;
+    }
+
+    .quick_login, .change_password {
+        margin-top: 24px;
+    }
+
+    .save a {
+        width: 312px;
+        height: 40px;
+        font-size: 16px;
+        line-height: 40px;
+        margin: 24px 0 48px;
+    }
+
+}

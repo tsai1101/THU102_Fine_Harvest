@@ -1,0 +1,368 @@
+@import url(reset.css);
+
+body{
+    font-family: 'Noto Sans TC', 'Roboto', sans-serif;
+    line-height: 1.6;
+    letter-spacing: 1.5px;
+    background-color: #ffe78f;
+    color: #333333;
+    font-size: 18px;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+/* ----------------- 左半部 ----------------- */
+.left{
+    width: 60%;
+    height: 100%;
+    border-radius: 0 60px 60px 0;
+    background-color: #fffdf1;
+    float: left;
+}
+
+.left h2{
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: 32px;
+}
+
+.left_content{
+    margin-top: 24px;
+    margin-left: 160px;
+}
+
+/* ----------------- 標籤 ----------------- */
+label{
+    display: block;
+    margin-bottom: 4px;
+}
+
+/* ----------------- 輸入框 ----------------- */
+input{
+    width: 70%;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+input:focus{
+    border-color: #4CAF50;
+}
+
+/* ----------------- 切換密碼 ----------------- */
+#password, #confirm_password{
+    width: 70%;
+    padding: 8px 16px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+#password .i{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.fa-eye-slash{
+    font-weight: 900;
+    position: relative;
+    left: -40px;
+}
+
+.fa-eye{
+    font-weight: 900;
+    position: relative;
+    left: -40px;  
+}
+
+/* ----------------- 忘記密碼 ----------------- */
+button{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    color: #333333;
+    background-color: #FFFDF1;
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 8px;
+    margin-left: 400px;
+    border: 0;
+    cursor: pointer;
+}
+
+button:hover{
+  background-color: #cccccc;
+}
+
+/* ----------------- 按鈕 ----------------- */
+.btn {
+    display: flex;
+    margin-top: 76px;
+}
+
+.signUp a{
+    width: 176px;
+    display: block;
+    text-align: center;
+    border: 1px solid #355441;
+    color: #355441;
+    text-decoration: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 8px; 
+    margin-right: 16px;
+}
+
+.logIn a{
+    width: 264px;
+    display: block;
+    text-align: center;
+    background-color: #355441;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 8px; 
+}
+
+.signUp a:hover, .logIn a:hover{
+    background-color: #87BC60;
+}
+
+/* ----------------- 第三方登入 ----------------- */
+.dashed-text{
+    margin: 32px 0;
+}
+
+.dashed-text::before, .dashed-text::after{
+    content: "";
+    display: inline-block;
+    width: 80%;
+    border-bottom: 2px dashed #333;
+}
+
+.dashed-text{
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+}
+
+.fb a{
+    display: block;
+    width: 68%;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+.line a{
+    display: block;
+    width: 68%;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 60px;
+}
+
+.fb a i, .line a i{
+    margin-right: 10px;
+    text-align: left;
+}
+
+/* ----------------- 右半部 ----------------- */
+.right{
+    width: 40%;
+    height: 712.98px;
+    background-color: #ffe78f;
+    float: right;
+}
+
+.right h1{
+    font-size: 32px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 180px;
+}
+
+.right img{
+    width: 300px;
+    height: 300px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 32px;
+}
+
+/* ----------------- Popup Area ----------------- */
+.mask{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.popup{
+    width: 800px;
+    padding: 30px;
+    background-color: #F5EBC7;
+    border-radius: 40px;
+    border: 3px solid #335441;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+
+.popup i{
+    font-size: 32px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    line-height: 1;
+    color: #333333;
+}
+  
+.popup i:hover{
+    color: #cccccc;
+}
+  
+.popup h3{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 24px;
+}
+  
+.popup p{
+    font-size: 18px;
+    text-align: center;
+}
+
+.popup a{
+    display: block;
+    color: #ffffff;
+    background-color: #335441;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 40px;
+    width: 150px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.popup a:hover{
+    background-color: #87BC60;
+}
+
+/* ----------------- RWD ----------------- */
+@media screen and (max-width: 375px) {
+    html {
+        overflow-x: hidden;
+    }
+    body {
+        overflow-x: hidden;
+        background-color: #f9f9f9;
+    }
+
+    .right {
+        display: none;
+    }
+    .left {
+        width: 100%;
+        border-radius: 0;
+        background-color: #f9f9f9;
+        float: none;
+    }
+    .left h2 {
+        font-size: 28px;
+    }
+    .left_content {
+        width: 360px;
+        margin-top: 24px;
+        margin-left: 40px;
+    }
+    i{
+        font-size: 14px;
+    }
+    .fa-eye-slash {
+        position: relative;
+        left: -30px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+    input {
+        width: 80%;
+    }
+    #password {
+        width: 80%;
+    }
+    .dashed-text {
+        font-size: 14px;
+    }
+    .dashed-text::before, .dashed-text::after {
+        width: 45%;
+    }
+
+    .btn {
+        display: grid;
+    }
+    .btn a {
+        margin: 0;
+        font-size: 16px;
+    }
+    .signUp {
+        display: grid;
+        order: 2;
+    }
+    .signUp a {
+        width: 268px;
+    }
+    .logIn {
+        display: grid;
+        order: 1;
+        margin-bottom: 8px;
+    }
+    .logIn a {
+        width: 268px;
+    }
+
+    .fb a, .line a {
+        width: 74%;
+    }
+    .fb a span, .line a span {
+        font-size: 16px;
+    }
+    .forgot-btn {
+        width: 70px;
+        margin-left: 220px;
+    }
+    button {
+        display: contents;
+        float: right;
+    }
+}

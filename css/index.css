@@ -1,0 +1,498 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+
+
+body{
+    background-color:#FFFDF1;
+    font-family: 'Noto Sans TC', sans-serif;
+    color: #333;
+}
+
+.banner img{
+    max-width: 1400px;
+    display: block;
+    margin: 0 auto;
+    background-size: contain;
+
+}
+
+h1{
+    font-size: 40px;
+    line-height: 150%;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+h2{
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 48px */
+    letter-spacing: 3.2px;
+}
+
+
+/* ---------所有產品--------- */
+.index_product{
+    width: 100%;
+    text-align: center;
+}
+
+.index_product h1{
+    font-weight: bold;
+    margin: 88px auto 32px;
+
+}
+
+.index_product ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.index_product li{
+    margin-right: 40px;
+    font-weight: 500;
+
+    flex-shrink: 1;
+    text-align: center;
+
+    display: inline-flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.index_product h2{
+    text-align: center;
+    margin: 0;
+}
+
+
+.index_product img{
+    width: 148px;
+    text-align: center;
+}
+
+    /* 出現及隱藏 */
+  
+    .index_product li img {
+    display: block; /* 預設所有圖片都顯示 */
+    height: auto;
+  }
+  
+    /* 第二張圖片預設隱藏 */
+  .index_product li img:nth-of-type(2) {
+    display: none;
+  }
+  
+  /* 懸停狀態 */
+  .index_product li:hover img:nth-of-type(1) {
+    display: none; /* 鼠標懸停時隱藏第一張圖片 */
+  }
+  
+  .index_product li:hover img:nth-of-type(2) {
+    display: block; /* 鼠標懸停時顯示第二張圖片 */
+  }
+
+
+/* ---------熱銷產品--------- */
+.hot_sale{
+    padding: 88px auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 1.2;
+}
+
+.hot_sale h1{
+    text-align: center;
+    margin-top: 88px;
+    margin-bottom: 48px;
+}
+
+
+.hot_sale ul {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-bottom: 88px;
+}
+
+.hot_sale li {
+    flex-basis: calc(25% - 24px); /* 考慮間距 */
+    flex-grow: 1;
+    margin-bottom: 64px;
+    text-align: left;
+    width: 273px;
+    height: 381px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+.hot_sale li img{
+    width: 273px;
+    height: 234px;
+    object-fit: cover; /* 圖片內容填充方式 */
+    border-radius: 10px;
+    box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.25);
+
+    margin-bottom: 8px;
+}
+
+
+.hot_sale p{
+    color: #909090;
+
+    /* Body/內文2/medium */
+    font-family: Noto Sans TC;
+    font-size: 16px;
+    font-style: normal; 
+    font-weight: 500;
+    letter-spacing: 1.6px;
+
+    margin-bottom: 4px;
+
+    display: inline;
+}
+
+.hot_sale h2{
+    margin: 0;
+    color: #333;
+
+    /* Body/內文1/medium */
+    font-family: Noto Sans TC;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+    letter-spacing: 1.8px;
+
+    margin-bottom: 4px;
+    
+}
+
+.hot_sale h3{
+    margin: 0;
+    color: var(--system-error, #FF3B30);
+
+    /* Body/內文1/bold */
+    font-family: Noto Sans TC;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 27px */
+    letter-spacing: 1.8px;
+    padding: 0;
+
+}
+
+.hot_sale h4{
+    color: var(--gray-scale-2, #909090);
+    font-family: Noto Sans TC;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+    letter-spacing: 1.4px;
+    text-decoration-line: line-through;
+    padding: 0;
+}
+
+.hot_sale h3,
+.hot_sale h4 {
+  display: inline-flex; /* 將元素設置為彈性盒子 */
+  align-items: center; /* 垂直置中對齊 */
+  margin-right: 8px; /* 右邊間距 */
+}
+
+.hot_sale h4 {
+  text-decoration-line: line-through; /* 刪除線 */
+}
+
+.hot_sale p,
+.hot_sale h2,
+.price {
+  margin-right: auto; /* 自動將元素向左推到邊緣 */
+}
+
+
+.hot_sale button{
+    border-radius: 8px;
+    background: #355441;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+
+    
+    width: 270px;
+    height: 45px;
+
+    border: none;
+    margin-top: 8px;
+      
+}
+
+.hot_sale i{
+    font-size: 25px;
+    margin-right: 8px;
+    line-height: 45px;
+}
+
+.hot_sale button:hover{
+    background-color: #87BC60;
+}
+
+
+/* ---------使命與目標--------- */
+.mission{
+    padding-top: 88px;
+
+    text-align: center;
+    padding-bottom: 200px;
+    background-image: url(./img/misssion/mission_bg.png);  
+}
+
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0px;
+}
+
+.mission h1{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 48px;
+
+    font-weight: bold;
+    
+}
+
+.mission ul{
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    margin-bottom: 48px;
+
+    
+}
+
+.mission li{
+    width: 376px;
+    margin-right: 32px;
+}
+
+.mission img{
+    width: 376px;
+    border-radius: 32px;
+
+    margin-bottom: 16px;
+}
+
+.mission h2{
+    font-weight: bold;
+    letter-spacing: 3.2px;
+
+    margin-bottom: 16px;
+}
+
+.mission p{
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    line-height: 150%; /* 24px */
+}
+
+.mission .btn{
+
+    width: 120px;
+
+    position: absolute;
+    right: 37px;
+    top: 620px;
+
+    border-radius: 0;
+
+    margin-bottom: 88px;
+}
+
+
+/* ------------------ 手機斷點一 -------------------- */
+@media screen and (max-width:1100px){
+.banner img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    background-size: contain;
+}
+
+}
+
+/* ------------------ 手機斷點二 -------------------- */
+
+@media screen and (max-width:768px){
+
+/* 所有產品 */
+.index_product h1{
+    margin: 48px auto 24px;
+}
+
+.index_product h2{
+    color: var(--text-black, var(--text-black, #333));
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* H5 手機小標題/Medium */
+    font-family: Noto Sans TC;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 30px */
+    letter-spacing: 0.8px;
+}
+
+.index_product{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.index_product ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.index_product li{
+    width: 104px;
+    height: auto;
+    margin-right: 8px;
+}
+
+.index_product img{
+width: 104px;
+}
+  
+/* 熱銷產品 */
+
+.wrapper{
+    width: 100%;
+ }
+
+ .hot_sale ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* 確保列表項在容器中均勻分布 */
+    padding: 0; /* 移除預設內邊距 */
+}
+
+.hot_sale li {
+    width: calc(50% - 20px); /* 設定寬度為容器的50%減去間隙 */
+    margin: 10px; /* 添加間隙以創造兩欄之間的空間 */
+    box-sizing: border-box; /* 確保邊距包含在寬度計算內 */
+}
+
+.hot_sale li img{
+    width: 156px;
+    height: auto;
+}
+
+.hot_sale p,h2,h3,h4{
+    width: 156px;
+    height: auto;
+    font-size: 14px;
+}
+
+.hot_sale button{
+    width: 156px;
+    height: auto;
+    font-size: 14px;
+}
+
+
+/* 使命與目標 */
+
+.mission {
+    padding-top: 44px; /* 上方內邊距減半 */
+    padding-bottom: 100px; /* 下方內邊距減半 */
+    background-image: none; /* 如果背景圖案在手機上顯示不佳，可以考慮移除或替換 */
+    background-color: #E1F3CD;
+ }
+
+  .wrapper {
+    width: auto; /* 寬度設為自動，以適應屏幕寬度 */
+    padding: 0 20px; /* 添加一些水平內邊距 */
+  }
+
+  .mission h1 {
+    font-size: 24px; /* 字體大小適當減小 */
+    margin-bottom: 24px; /* 底部邊距減半 */
+  }
+
+  .mission ul {
+    display: block; /* 取消 flex 布局，改為塊級元素 */
+  }
+
+  .mission li {
+    width: auto; /* 寬度設為自動 */
+    margin-right: 0; /* 移除右邊距 */
+    margin-bottom: 32px; /* 底部邊距適當調整 */
+    text-align: left;
+  }
+
+  .mission img {
+    width: 100%; /* 圖片寬度設為100%，以適應容器寬度 */
+    height: auto; /* 高度自動 */
+    margin-bottom: 16px; /* 底部邊距調整 */
+    border-radius: 16px; /* 圓角半徑減半 */
+  }
+
+  .mission h2 {
+    font-size: 20px; /* 標題字體大小適當減小 */
+    letter-spacing: normal; /* 字母間距恢復正常 */
+    margin-bottom: 16px; /* 底部邊距調整 */
+  }
+
+  .mission p {
+    font-size: 14px; /* 段落字體大小適當減小 */
+    line-height: normal; /* 行高恢復正常 */
+    padding:0px; 
+  }
+
+  .mission .btn {
+    width: 80px; /* 按鈕寬度適當減小 */
+    position: static; /* 移除絕對定位 */
+    display: block; /* 設為塊級元素 */
+    margin: 32px auto; /* 居中顯示，上下邊距調整 */
+    border-radius: 8px; /* 圓角半徑減半 */
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+

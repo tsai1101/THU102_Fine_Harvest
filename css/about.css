@@ -1,0 +1,136 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+
+body{
+    color: #333;
+    background-color: #FFFDF1;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.5;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 1.5;
+    letter-spacing: 3.2px;
+}
+
+p{
+    /* Body/內文1/regular */
+    font-family: Noto Sans TC;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 1.8px;
+}
+
+/* ------------Top banner--------------- */
+.top_banner{
+    background-image: url(../img/about/top_banner.png);
+    height: 200px;
+}
+
+.top_banner_content{
+    width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+    line-height: 150%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top_banner_content h1{
+    color: #fff;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.75);
+    margin-bottom: 16px;
+}
+
+.breadcrumb{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.75);
+}
+
+.breadcrumb p{}
+
+.breadcrumb i{
+    margin: 0 8px;
+}
+
+/* ------------ Content --------------- */
+
+.content{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.content h1{
+    color: #335441;
+    text-align: center;
+    margin: 88px auto;
+    letter-spacing: 4px;
+}
+
+.paragraph{
+    display: flex;
+    margin-bottom: 64px;
+}
+
+.paragraph img{
+    width: 582px;
+    flex-shrink: 0;
+
+    border-radius: 12px;
+    margin-right: 36px;
+}
+
+.paragraph text{
+    width: 582px;
+    flex-shrink: 0;
+}
+
+.paragraph .text h2{
+    margin-bottom: 16px;
+}
+
+.paragraph .text p{
+font-feature-settings: 'clig' off, 'liga' off;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 200%; /* 36px */
+letter-spacing: 1.8px;
+margin-bottom: 1em;
+}
+
+/* 第二段 */
+.paragraph:nth-child(odd) .text {
+    order: -1;
+    margin-right: 36px;
+}
+
+.paragraph:nth-child(3) img{
+    margin-right: 0;
+}
+
+  
+/* 第一三段 */
+.paragraph:nth-child(even) .text {
+    order: 1; 
+}
+
+
+
+
+
+
+
+
