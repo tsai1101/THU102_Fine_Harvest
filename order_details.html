@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="icon" type="image/x-icon" href="img/logo.ico">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/order_details.css">
+    <title>良作｜訂單詳情</title>
+</head>
+<body>
+
+    <main>
+
+        <!-- Header -->
+        <div class="header-frame"></div>
+
+        <!-- 最上方的標題＆麵包屑 -->
+        <div class="bn">
+            <h1>會員中心</h1>
+            <h2><a href="index.html">首頁</a> > <a href="member.html">會員中心</a> > <a href="order_list.html">訂單記錄</a> > <a href="#">訂單詳情</a></h2>
+        </div>
+
+        <!-- 最外層的框 -->
+        <div class="wrapper">
+
+            <!-- left nav -->
+            <div class="nav">
+                <div class="avator">
+                    <img src="img/avator.png" alt="">
+                    <h6>陳小亮</h6>
+                </div>
+                
+                <a href="member.html">個人資料</a>
+                <a class="active" href="javascript:;">訂單記錄</a>
+                <a href="favorites.html">收藏清單</a>
+                <a href="coupon.html">我的優惠券</a>
+                <a href="login.html">登出</a>
+            </div>
+
+            <!-- right -->
+            <div class="right">
+                <div class="right-content">
+                    <h2 class="right-content-title">訂單詳情</h2>
+
+                    <!-- 訂單詳情 -->
+                    <!-- 訂單進度 -->
+                    <div class="order-progress">
+                        <div class="progress">
+                        <span class="active">處理中</span>
+                        <span>已出貨</span>
+                        <span>已送達</span>
+                        <span>取貨完成</span>
+                        </div>
+                    </div>
+
+                    <!-- 訂單內容 -->
+                    <div class="order-info">
+                        <h5>訂單編號：#231122101</h5>
+                        <h6 class="order-info-name">姓名：陳小亮</h6>
+                        <h6>電話：0912345678</h6>
+                        <h6>電子信箱：good@fineharvest.com</h6>
+                        <h6>付款方式：信用卡付款</h6>
+                        <h6>發票類型：手機載具（/ABC123）</h6>
+                        <h6>發票號碼：AB12345678</h6>
+                        <h6>配送地址：台北市中山區南京東路三段219號</h6>
+                        <h6>訂單備註：</h6>
+                    </div>
+
+                    <!-- 商品資料 -->
+                    <div class="product-info">
+                        <div class="product-info-title">
+                            <div class="product-info-title-name"><h4>商品資料</h4></div>
+                            <div class="product-info-title-number">
+                                <h4>價格</h4>
+                                <h4>數量</h4>
+                                <h4>小計</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="product-info-list">
+                            <ul>
+                                <li class="product-info-1">
+                                    <img src="img/product-info-1.png" alt="">
+
+                                    <div class="product-info-name">
+                                        <h4>有機羽衣甘藍(3包入)</h4>
+                                        <h5>青青農場</h5>
+                                    </div>
+
+                                    <div class="product-info-price">
+                                        <h6>NT$300</h6>
+                                        <h6>1</h6>
+                                        <h6>NT$300</h6>
+                                    </div>
+                                </li>
+
+                                <li class="product-info-2">
+                                    <img src="img/product-info-2.png" alt="">
+
+                                    <div class="product-info-name">
+                                        <h4>好吃馬鈴薯(5顆入)</h4>
+                                        <h5>青菜菜園</h5>
+                                    </div>
+
+                                    <div class="product-info-price">
+                                        <h6>NT$50</h6>
+                                        <h6>2</h6>
+                                        <h6>NT$100</h6>
+                                    </div>
+                                </li>
+
+                                <li class="product-info-3">
+                                    <img src="img/product-info-3.png" alt="">
+
+                                    <div class="product-info-name">
+                                        <h4>履歷櫛瓜(5根入)</h4>
+                                        <h5>青青農場</h5>
+                                    </div>
+
+                                    <div class="product-info-price">
+                                        <h6>NT$150</h6>
+                                        <h6>1</h6>
+                                        <h6>NT$150</h6>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="total">
+                            <div class="total-title">
+                                <h3>總計</h3>
+                                <h4>商品小計</h4>
+                                <h4>優惠券折抵</h4>
+                                <h4>運費</h4>
+                            </div>
+
+                            <div class="total-price">
+                                <h3>NT$625</h3>
+                                <h4>NT$550</h4>
+                                <h4>-5</h4>
+                                <h4>NT$80</h4>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="btn-buy-again"><a href="#">再買一次</a></div>
+                    
+                </div>
+                
+            </div>
+
+    </div>
+    <!-- Footer -->
+    <div class="footer-frame"></div>
+
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/order_details.js"></script>
+
+</body>
+</html>

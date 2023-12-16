@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="icon" type="image/x-icon" href="img/logo.ico">
+    <link rel="stylesheet" href="css/register.css">
+    <title>良作｜歡迎來到良作～註冊會員</title>
+</head>
+<body>
+
+    <main>
+
+        <div class="wrapper">
+             
+            <!-- 左半部 -->
+            <div class="left">
+                
+                <h1>歡迎來到良作</h1>
+                <img src="img/Register.png" alt="">
+            
+            </div>
+
+            <!-- 右半部 -->
+            <div class="right">
+
+            <div class="right_content">
+
+                <h2>註冊會員</h2>
+
+                <label for="username"><span>*</span>姓名</label>
+                <input type="text" id="username" name="username" placeholder="輸入姓名" required>
+                <br>
+                
+                <label for="email"><span>*</span>信箱</label>
+                <input type="email" id="email" name="email" placeholder="電子信箱" required>
+                <br>
+                
+                <label for="password"><span>*</span>密碼</label>
+                <input type="password" id="password" name="password" placeholder="請輸入8-16位數字母，並包含大小寫" required>
+                <i class="fa-solid fa-eye-slash" onclick="togglePasswordVisibility('password')"></i>
+                <br>
+                
+                <label for="confirm_password"><span>*</span>確認密碼</label>
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="確認密碼">
+                <i class="fa-solid fa-eye-slash" onclick="togglePasswordVisibility('confirm_password')"></i>
+                <br>
+
+                <!-- 驗證碼 -->
+                <label for="captcha"><span>*</span>驗證碼</label>
+                <input type="text" id="captchaInput" name="captchaInput" placeholder="輸入驗證碼">
+                <div id="captcha">1234</div>
+                <button id="refreshBtn" onclick="refreshCaptcha()"><i class="fa-solid fa-rotate-right"></i></button>
+        
+                <!-- 勾選個人資料同意 -->
+                <div class="agree">
+                    <input type="checkbox" id="agree" name="agree">
+                    <label for="agree">我已閱讀且同意遵守良作服務條款及隱私權</label>
+                </div>
+        
+                <!-- 按鈕 -->
+                <div class="btn">
+                    <div class="logIn"><a href="login.html">登入</a></div>
+                    <div class="signUp"><a href="#">註冊</a></div>
+                </div>
+
+                <!-- 第三方登入 -->
+                <p class="dashed-text"> 或是使用第三方登入 </p>
+                    
+                <div class="fb">
+                    <a href="#"><i class="fa-brands fa-facebook" style="color: #1877f2;"></i><span>使用 facebook 帳號登入</span></a>
+                </div>
+
+                <div class="line">
+                    <a href="#"><i class="fa-brands fa-line" style="color: #00b900;"></i><span>使用 LINE 帳號登入</span></a>
+                </div>
+
+            </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/register.js"></script>
+
+</body>
+</html>
